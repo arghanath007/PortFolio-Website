@@ -1,0 +1,12 @@
+// Button Animation
+
+@keyframes button-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

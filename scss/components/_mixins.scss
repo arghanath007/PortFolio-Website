@@ -1,0 +1,20 @@
+@use '../custom' as *;
+
+// GRADIENT MIXING COLOR
+
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+
+//ABSOLUTE CENTER POSITION
+
+@mixin absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+}

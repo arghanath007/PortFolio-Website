@@ -1,0 +1,62 @@
+@use '../custom' as *;
+
+.about {
+  position: relative;
+  padding: 1rem 0;
+
+  &_content {
+    padding: 1rem;
+    margin-top: 0;
+
+    p {
+      font-size: 0.8rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 5rem;
+    }
+
+    &--pic {
+      margin-top: 20%;
+      width: 100%;
+      padding-bottom: 5%;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      color: $primary;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+//   &_pic {
+//     max-width: 100%;
+
+//     &--hobbies {
+//       padding-top: 25%;
+//       width: 100%;
+//     }
+//   }
+// }
+
+// .about_content {
+//   padding: 1rem;
+//   margin-top: 1.5rem;
+
+//   .icon {
+//     font-size: 2.5rem;
+//     color: $primary;
+//   }
+// }

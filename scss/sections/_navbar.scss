@@ -1,0 +1,16 @@
+@use '../custom' as *; //-> Files imported with @use are called modules. To use 'mixins' or 'variables' of these modules, we have to call them using namespaces. By default, the namespace is the filename(without the extension). '*' tells us to remove the namespaces.
+
+@use '../components/mixins' as *;
+
+.menu {
+  @include gradient;
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}
