@@ -18,3 +18,9 @@
   left: 50%;
   transform: translateX(-50%, -50%);
 }
+
+// TRANSITION Effect IN PROJECTS
+@mixin transitionProperty {
+  transition-duration: 1s;
+  transition-property: all;
+}
