@@ -6,6 +6,11 @@
   padding: 10rem 0 0 0;
   width: 100%;
   height: 100%;
+  transform: translateY(1px);
+
+  svg {
+    transform: translateY(1px);
+  }
 }
 
 .intros {
@@ -34,13 +39,16 @@
   height: 6rem;
   border: 0.55rem solid $white;
   border-radius: 50%;
+  -webkit-animation: button-animation 0.5s linear infinite;
   animation: button-animation 0.5s linear infinite;
 
   &--layer-one {
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
   }
 
   &--layer-two {
+    -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
   }
 }

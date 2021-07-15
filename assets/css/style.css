@@ -10874,10 +10874,8 @@ textarea.form-control-lg {
   text-align: center;
   position: relative;
 }
-.languages_logo-box img {
-  height: 100%;
-}
 .languages_logo-box img:hover {
+  -webkit-filter: grayscale(120);
   filter: grayscale(120);
 }
 
@@ -10950,6 +10948,10 @@ textarea.form-control-lg {
   padding: 10rem 0 0 0;
   width: 100%;
   height: 100%;
+  transform: translateY(1px);
+}
+.intro-section svg {
+  transform: translateY(1px);
 }
 
 .intros .video-box {
@@ -10969,12 +10971,15 @@ textarea.form-control-lg {
   height: 6rem;
   border: 0.55rem solid #fff;
   border-radius: 50%;
+  -webkit-animation: button-animation 0.5s linear infinite;
   animation: button-animation 0.5s linear infinite;
 }
 .button-animation--layer-one {
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 .button-animation--layer-two {
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
